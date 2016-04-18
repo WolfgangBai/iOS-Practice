@@ -19,6 +19,9 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor blueColor];
 }
+- (void)IHaveNoIdea{
+    
+}
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
    
