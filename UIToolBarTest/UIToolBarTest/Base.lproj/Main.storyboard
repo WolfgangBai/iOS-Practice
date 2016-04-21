@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dMX-Xk-VhU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="I6D-td-3oe">
+            <objects>
+                <viewController id="dMX-Xk-VhU" customClass="BCGViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eO3-OO-0rh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cby-uG-xa9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Ok-7H-EPC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8c-qA-3m9">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="qAK-D4-yRX"/>
+                                    <barButtonItem systemItem="refresh" id="7sP-u4-jMD">
+                                        <connections>
+                                            <action selector="actionWeb:" destination="dMX-Xk-VhU" id="JcX-uH-2mz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ice-cM-Va8"/>
+                                    <barButtonItem tag="1" systemItem="rewind" id="2aV-dr-VOI">
+                                        <connections>
+                                            <action selector="actionWeb:" destination="dMX-Xk-VhU" id="Sxy-US-nHB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="RnL-kG-VMf"/>
+                                    <barButtonItem tag="2" systemItem="fastForward" id="Q59-nu-3eq">
+                                        <connections>
+                                            <action selector="actionWeb:" destination="dMX-Xk-VhU" id="eBW-mb-KOb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2S5-FO-88s"/>
+                                    <barButtonItem tag="3" systemItem="edit" id="rly-wa-rFH">
+                                        <connections>
+                                            <action selector="actionWeb:" destination="dMX-Xk-VhU" id="aQM-Zv-wxd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="Rkq-yH-97d"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="a8c-qA-3m9" secondAttribute="trailing" id="7Eg-7y-xj1"/>
+                            <constraint firstItem="a8c-qA-3m9" firstAttribute="leading" secondItem="4Ok-7H-EPC" secondAttribute="leading" id="WMb-N8-aWY"/>
+                            <constraint firstItem="Cby-uG-xa9" firstAttribute="top" secondItem="a8c-qA-3m9" secondAttribute="bottom" id="d1k-yq-YeO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="Q59-nu-3eq" id="sf9-Ui-Myx"/>
+                        <outlet property="forwardButton" destination="2aV-dr-VOI" id="r8r-Iw-QYE"/>
+                        <outlet property="homeButton" destination="rly-wa-rFH" id="r2S-eZ-roG"/>
+                        <outlet property="leftFixed" destination="qAK-D4-yRX" id="3dh-tJ-ZKc"/>
+                        <outlet property="leftFlex" destination="ice-cM-Va8" id="a7n-N6-ffw"/>
+                        <outlet property="middleFlex" destination="RnL-kG-VMf" id="Vye-ex-SRq"/>
+                        <outlet property="refreshButton" destination="7sP-u4-jMD" id="gAg-Ai-OU1"/>
+                        <outlet property="rightFixed" destination="Rkq-yH-97d" id="qTe-bc-pNe"/>
+                        <outlet property="rightFlex" destination="2S5-FO-88s" id="8rw-cP-vbP"/>
+                        <outlet property="toolBar" destination="a8c-qA-3m9" id="oU0-3R-Tou"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kRe-ds-r98" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="-22"/>
+        </scene>
+    </scenes>
+</document>
